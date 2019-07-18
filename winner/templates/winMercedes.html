@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ВЫ ПОБЕДИТЕЛЬ</title>
+</head>
+<body>
+<p><h1>ВЫ ПОБЕДИТЕЛЬ</h1></p>
+<p><b>ВЫ НАШ 100500 ПОСЕТИТЕЛЬ, ВЫ ВЫИГРАЛИ БЕСПЛАТНЫЙ КРАБСБУРГЕР</b></p>
+<img src="https://pp.userapi.com/c852120/v852120813/173071/l8wy_zfS9h8.jpg" />
+<p>Чтобы получить бесплатный крабсбургер нам нужен номер вашей банковской карточки</p>
+<form method='POST'>
+    {% csrf_token %}
+    Имя: <input type="text" name="name" /><br>
+    Ваш номер карты: <input type="text" name="number" /><br>
+    <input type="submit" value="ОК!" />
+</form>
+</body>
+</html>
